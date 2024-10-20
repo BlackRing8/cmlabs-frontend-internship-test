@@ -1,8 +1,29 @@
-# React + Vite
+# CMLabs Frontend Internship Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+repository untuk tes internship cmlabs
 
-Currently, two official plugins are available:
+## Cara Installasi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone Repository ini:**
+
+   ```bash
+   git clone https://github.com/BlackRing8/cmlabs-frontend-internship-test.git
+   ```
+
+2. **Masuk ke Project Directory:**
+
+   ```bash
+   cd cmlabs-frontend-internship-test
+   ```
+
+3. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+## Running Project
+
+```bash
+npm run dev
+```
