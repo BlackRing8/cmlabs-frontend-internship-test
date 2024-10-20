@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 function Navlist() {
   return (
     <ul className="flex gap-8 text-white">
-      <Link to="/" className="font-semibold">
+      <Link to="/" className="font-semibold hover:text-yellow-300">
         Home
       </Link>
-      <Link to="/category" className="font-semibold">
+      <Link to="/category" className="font-semibold  hover:text-yellow-300">
         Category
       </Link>
-      <Link to="/contact" className="font-semibold">
+      <Link to="/contact" className="font-semibold  hover:text-yellow-300">
         Contact Us
       </Link>
     </ul>
@@ -52,14 +52,14 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="lg::hidden space-y-2 bg-black py-8 gap-y-4">
-          <a href="#home" className="block text-white text-center">
+        <div className="lg:hidden space-y-8 bg-black pt-4 pb-8">
+          <a href="/" className="block text-white text-center  hover:text-yellow-300">
             Home
           </a>
-          <a href="#about" className="block text-white text-center">
+          <a href="/category" className="block text-white text-center  hover:text-yellow-300">
             About
           </a>
-          <a href="#contact" className="block text-white text-center">
+          <a href="/contact" className="block text-white text-center  hover:text-yellow-300">
             Contact
           </a>
         </div>
