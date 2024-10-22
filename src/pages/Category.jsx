@@ -39,9 +39,9 @@ const Category = () => {
         </div>
       )}
       <div className="py-24 lg:h-full lg:pt-44 w-full">
-        <h1 className="uppercase font-bold text-5xl text-black text-center">Category Meal</h1>
+        <h1 className="uppercase font-bold text-5xl text-black text-center py-10">Category Meal</h1>
         {/* Tampilkan daftar kategori sebagai tombol */}
-        <div className="w-full justify-center h-auto lg:h-auto grid-cols-2 sm:grid-cols-3 grid md:grid-cols-4 lg:flex lg:flex-wrap  gap-y-8 px-auto  gap-x-2 lg:px-14 pt-8 lg:pt-32">
+        {/* <div className="w-full justify-center h-auto lg:h-auto grid-cols-2 sm:grid-cols-3 grid md:grid-cols-4 lg:flex lg:flex-wrap  gap-y-8 px-auto  gap-x-2 lg:px-14 pt-8 lg:pt-32">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -51,6 +51,15 @@ const Category = () => {
               // Kirim request ke API kedua
             >
               <span className="text-white bg-black  px-6 rounded-full">{category.strCategory}</span>
+            </button>
+          ))}
+        </div> */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 px-8 py-20">
+          {categories.map((category, index) => (
+            <button key={index} onClick={() => handleCategoryClick(category.strCategory)} className="border-2 border-black rounded-lg bg-yellow-100 overflow-hidden hover:scale-125 transition-transform">
+              {/* <span className="text-white bg-black  px-6 rounded-full">{category.strCategory}</span> */}
+              <img className="h-auto max-w-full rounded-lg" src={category.strCategoryThumb} alt={category.strCategory} />
+              <span className="text-white bg-black px-6 rounded-full">{category.strCategory}</span>
             </button>
           ))}
         </div>

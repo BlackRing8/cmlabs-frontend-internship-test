@@ -57,10 +57,10 @@ const Header = () => {
             Home
           </a>
           <a href="/category" className="block text-white text-center  hover:text-yellow-300">
-            About
+            Category
           </a>
           <a href="/contact" className="block text-white text-center  hover:text-yellow-300">
-            Contact
+            Contact Us
           </a>
         </div>
       )}
